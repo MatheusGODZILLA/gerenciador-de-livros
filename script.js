@@ -35,3 +35,54 @@ function cadastrarLivro(event) {
     // Salvar os livros no Local Storage
     saveLocalStorage();
   }
+
+// Função para atualizar a lista de livros na tabela
+function atualizarListaLivros() {
+    // Limpar a lista de livros
+    bookList.innerHTML = '';
+  
+    // Verificar se há livros para exibir
+    if (library.length === 0) {
+      nullMessage.style.display = 'block';
+      return;
+    }
+  
+    nullMessage.style.display = 'none';
+  
+    // Ordenar a lista de livros pelo critério selecionado
+    const sortBy = document.getElementById('sort-by').value;
+    library.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
+  
+    // Criar as linhas da tabela com os livros
+    library.forEach((book) => {
+      const row = document.createElement('tr');
+      const titleCell = document.createElement('td');
+      const authorCell = document.createElement('td');
+      const publicationDateCell = document.createElement('td');
+      const actionsCell = document.createElement('td');
+  
+      titleCell.textContent = book.title;
+      authorCell.textContent = book.author;
+      publicationDateCell.textContent = book.publicationDate;
+  
+      const editButton = document.createElement('button');
+      editButton.textContent = 'Editar';
+      editButton.classList.add('edit-button');
+      editButton.addEventListener('click', () => editarLivro(book));
+  
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = 'Excluir';
+      deleteButton.classList.add('delete-button');
+      deleteButton.addEventListener('click', () => excluirLivro(book));
+  
+      actionsCell.appendChild(editButton);
+      actionsCell.appendChild(deleteButton);
+  
+      row.appendChild(titleCell);
+      row.appendChild(authorCell);
+      row.appendChild(publicationDateCell);
+      row.appendChild(actionsCell);
+  
+      bookList.appendChild(row);
+    });
+}
