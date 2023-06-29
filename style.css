@@ -33,3 +33,17 @@ color: var(--secondary-color);
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Personalizar "Cadastrar Livro" (título) */
+.cadastrar {
+    background-color: #3A98B9;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
