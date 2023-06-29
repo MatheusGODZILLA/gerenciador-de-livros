@@ -146,3 +146,36 @@ input[type="submit"]:hover {
     align-items: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* Personalizar caixinha de "Ordenar por" */
+#sort-by {
+    width: 20%;
+    margin-left: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+}
+
+/* alterar texto da exibição na listagem dos livro */
+table {
+    background-color: #72717f;
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--secondary-color);
+    text-align: center;
+}
+  
+/* alterar a barra de exibição dos livros (th)*/
+th {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+  
+tr:nth-child(even) {
+    background-color: --tertiary-color;
+}
