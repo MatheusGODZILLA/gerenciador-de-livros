@@ -86,3 +86,17 @@ function atualizarListaLivros() {
       bookList.appendChild(row);
     });
 }
+
+// Função para armazenar dados no Local Storage
+function saveLocalStorage() {
+    localStorage.setItem('library', JSON.stringify(library));
+}
+  
+// Função para carregar dados do Local Storage
+function loadLocalStorage() {
+    const savedLibrary = localStorage.getItem('library');
+    if (savedLibrary) {
+      library = JSON.parse(savedLibrary);
+      atualizarListaLivros();
+    }
+}
