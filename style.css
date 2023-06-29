@@ -68,3 +68,51 @@ form {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/*Alterar os campos de texto */
+input[type="text"],
+select {
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Alterar a caixinha da data */
+input[type="date"] {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Alterar o botão */
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+/* alterar a cor do botão quando o cursor passa por cima dele */
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #7bf064, #42aaf5);
+}
