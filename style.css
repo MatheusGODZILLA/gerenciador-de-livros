@@ -179,3 +179,25 @@ th {
 tr:nth-child(even) {
     background-color: --tertiary-color;
 }
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.edit-button,
+.delete-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+.delete-button {
+    background-color: #f44336;
+}
