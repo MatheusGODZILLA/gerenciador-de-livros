@@ -116,3 +116,33 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: linear-gradient(45deg, #7bf064, #42aaf5);
 }
+
+/* Personalizar "Listagem de Livros" */
+.listagem {
+    background-color: #b475db;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Alterar o bloco da listagem */
+.list-container{
+    background-color: #A9907E;
+    border: 3px solid #7bf064;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    align-items: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
