@@ -117,3 +117,15 @@ function editarLivro(book) {
     // Salvar os livros no Local Storage
     saveLocalStorage();
 }
+
+// Função para excluir um livro
+function excluirLivro(book) {
+    // Remover o livro da lista
+    library = library.filter((item) => item !== book);
+  
+    
+    atualizarListaLivros();
+  
+    
+    saveLocalStorage();
+}
