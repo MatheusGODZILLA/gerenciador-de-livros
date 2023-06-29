@@ -129,3 +129,9 @@ function excluirLivro(book) {
     
     saveLocalStorage();
 }
+
+// Adicionar o evento de submit ao formulário
+bookForm.addEventListener('submit', cadastrarLivro);
+
+// Carregar os livros do Local Storage ao carregar a página
+loadLocalStorage();
