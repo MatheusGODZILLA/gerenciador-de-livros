@@ -6,7 +6,7 @@
   
   
 body {
-background-color: #224c5f;
+background-color: #72717f;
 font-family: Arial, sans-serif;
 margin: 0;
 padding: 20px;
@@ -15,7 +15,7 @@ color: var(--secondary-color);
 
 /* Personalizar o título do projeto */
 .title {
-    background-color: #698269;
+    background-color: #37393A;
     color: var(--secondary-color);
     padding: 20px;
     text-transform: uppercase;
@@ -36,7 +36,7 @@ color: var(--secondary-color);
 
 /* Personalizar "Cadastrar Livro" (título) */
 .cadastrar {
-    background-color: #3A98B9;
+    background-color: #37393A;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -54,8 +54,8 @@ form {
 
 /* Alterar o bloco do menu cadatrar */
 .form-container{
-    background-color: #A9907E;
-    border: 3px solid #7bf064;
+    background-color: #8b7565;
+    border: 3px solid #37393A;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -67,6 +67,7 @@ form {
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
 }
 
 /*Alterar os campos de texto */
@@ -79,7 +80,7 @@ select {
     border: none;
     border-radius: 5px;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: #37393A;
     margin-bottom: 20px;
 }
 
@@ -92,7 +93,7 @@ input[type="date"] {
     border: none;
     border-radius: 5px;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: #37393A;
     margin-bottom: 20px;
 }
 
@@ -105,21 +106,16 @@ input[type="submit"] {
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    background-color: var(--primary-color);
+    background-color: #37393A;
     color: var(--secondary-color);
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     margin: 0 auto;
 }
 
-/* alterar a cor do botão quando o cursor passa por cima dele */
-input[type="submit"]:hover {
-    background: linear-gradient(45deg, #7bf064, #42aaf5);
-}
-
 /* Personalizar "Listagem de Livros" */
 .listagem {
-    background-color: #b475db;
+    background-color: #37393A;
     text-align: center;
     color: var(--secondary-color);
     font-size: 20px;
@@ -133,8 +129,8 @@ input[type="submit"]:hover {
 
 /* Alterar o bloco da listagem */
 .list-container{
-    background-color: #A9907E;
-    border: 3px solid #7bf064;
+    background-color: #8b7565;
+    border: 3px solid #37393A;
     padding: 20px;
     border-radius: 5px;
     margin-left: 50px;
@@ -145,6 +141,7 @@ input[type="submit"]:hover {
     flex-basis: auto;
     align-items: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
 }
 
 /* Personalizar caixinha de "Ordenar por" */
@@ -156,7 +153,7 @@ input[type="submit"]:hover {
 table,
 th,
 td {
-    border: 1px solid var(--primary-color);
+    border: 1px solid #37393A;
     padding: 10px;
 }
 
@@ -172,12 +169,12 @@ table {
 /* alterar a barra de exibição dos livros (th)*/
 th {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: #37393A;
     font-weight: bold;
 }
   
 tr:nth-child(even) {
-    background-color: --tertiary-color;
+    background-color: #37393A;
 }
 
 .action-buttons {
@@ -206,9 +203,10 @@ tr:nth-child(even) {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
     align-items: center;
     background-color: #72717f;
-    border: 3px solid #ffffff;
+    border: 3px solid #37393A;
     border-radius: 5px;
     padding: 12px;
     overflow: auto;
