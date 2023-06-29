@@ -100,3 +100,20 @@ function loadLocalStorage() {
       atualizarListaLivros();
     }
 }
+
+// Função para editar um livro
+function editarLivro(book) {
+    // Preencher os campos de entrada com os valores do livro selecionado
+    titleInput.value = book.title;
+    authorInput.value = book.author;
+    publicationDateInput.value = book.publicationDate;
+  
+    // Remover o livro da lista
+    library = library.filter((item) => item !== book);
+  
+    // Atualizar a lista de livros
+    atualizarListaLivros();
+  
+    // Salvar os livros no Local Storage
+    saveLocalStorage();
+}
