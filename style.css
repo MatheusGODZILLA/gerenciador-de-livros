@@ -210,7 +210,7 @@ tr:nth-child(even) {
     border-radius: 5px;
     padding: 12px;
     overflow: auto;
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
     margin-top: 90px;
 }
