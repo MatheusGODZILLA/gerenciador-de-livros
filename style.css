@@ -47,3 +47,24 @@ color: var(--secondary-color);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+form {
+    margin-bottom: 20px;
+}
+
+/* Alterar o bloco do menu cadatrar */
+.form-container{
+    background-color: #A9907E;
+    border: 3px solid #7bf064;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    width: 300px;
+    height: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
