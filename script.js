@@ -51,7 +51,11 @@ function atualizarListaLivros() {
   
     // Ordenar a lista de livros pelo critério selecionado
     const sortBy = document.getElementById('sort-by').value;
-    library.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
+    if (sortBy === 'publication-date') {
+      library.sort((a, b) => new Date(b.publicationDate) - new Date(a.publicationDate));
+    } else {
+      library.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
+    }
   
     // Criar as linhas da tabela com os livros
     library.forEach((book) => {
@@ -86,6 +90,10 @@ function atualizarListaLivros() {
       bookList.appendChild(row);
     });
 }
+
+// Evento de alteração da ordenação
+const sortBySelect = document.getElementById('sort-by');
+sortBySelect.addEventListener('change', atualizarListaLivros);
 
 // Função para armazenar dados no Local Storage
 function saveLocalStorage() {
